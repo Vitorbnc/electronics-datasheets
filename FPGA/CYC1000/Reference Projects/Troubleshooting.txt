@@ -1,0 +1,8 @@
+Error: nios2-elf-gcc not found
++ Add this to your path: C:\intelFPGA_lite\21.1\nios2eds\bin\gnu\H-x86_64-mingw32\bin
+
+Error: ERROR: UtilAcceptVsock:243: accept4 failed 110
++ Run:
+wsl --update
+wsl --shutdown
++ If that doesn't work, try enabling interop (should be enabled by default tho) here https://learn.microsoft.com/en-us/windows/wsl/wsl-config#wslconf

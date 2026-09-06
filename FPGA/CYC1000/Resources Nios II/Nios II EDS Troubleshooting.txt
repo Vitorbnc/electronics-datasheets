@@ -1,0 +1,15 @@
+1. Fails on building application target `mem_init_generate`:
+* Right-click on the BSP project -> Nios II -> Generate BSP
+* Build the `mem_init_generate` target again
+
+2.Fails to find new `#defines` after BSP was re-generated:
+* Right-click on the main project -> Index -> Rebuild
+
+3.Reading PIO Ports always returns 0
+* Right-click on the BSP project -> Nios II -> BSP Editor
+* Under Settings -> Common, untick "enable_small_c_library"
+
+4.Clearing IRQ Bits:
+If the option "Enable bit-clearing for edge capture register" is turned off in Qsys, writing any value to the edgecapture register clears all bits in the register. Otherwise, writing a 1 to a particular bit in the register clears only that bit. Code:
+IOWR_ALTERA_AVALON_PIO_EDGE_CAP (PIO_BASE, IRQ_BIT_MASK); 
+For example, if your irq signal is connected to pio bit 5, you'll define IRQ_BIT_MASK = 0x40 

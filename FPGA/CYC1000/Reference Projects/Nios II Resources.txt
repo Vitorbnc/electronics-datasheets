@@ -1,0 +1,24 @@
+Install:
+https://www.intel.com/content/www/us/en/docs/programmable/683525/21-3/windows-installation.html
+
+3.1.1. Windows Installation
+The procedure for installing Eclipse IDE in Windows environment:
+
+    Create a temporary folder for you to use as a repository to build the necessary component files before merging the files with the Intel® Quartus® Prime software.
+    Download Eclipse C/C++ IDE for Mars.2 by clicking on Download CDT 8.8.1.
+        Locate and move the eclipse-cpp-mars-2-win32-x86_64.zip file to the temporary folder.
+        Extract eclipse-cpp-mars-2-win32-x86_64.zip to get the eclipse folder.
+    Tip: Try the mirror links if the main source link does not work.
+    Copy the eclipse_nios2_plugins.zip file from <Intel® Quartus® Prime installation directory>/nios2eds/bin to the temporary folder.
+        Extract eclipse_nios2_plugins.zip to get the eclipse_nios2 folder.
+    Copy the content of eclipse_nios2 into eclipse folder. After you successfully copy the content, delete the eclipse_nios2 folder.
+    Rename eclipse into eclipse_nios2.
+    Copy the new eclipse_nios2 folder and paste it in <Intel® Quartus® Prime installation directory>/nios2eds/bin. Delete the temporary folder.
+    Allow the merging of eclipse_nios2 folders.
+    Verify the extraction is done correctly by making sure you see the <Intel® Quartus® Prime installation directory>/nios2eds/bin/eclipse_nios2/plugin_customization.ini file.
+    You can now launch Nios® II SBT for Eclipse using eclipse-nios2.exe
+    Note: You can find the instructions in the <Intel® Quartus® Prime installation directory>/nios2eds/bin/README file.
+
+--------------------------------------
+https://www.intel.com/content/www/us/en/support/programmable/support-resources/intellectual-property/ips-nios2-ide-tutorial.html
+https://www.intel.com/content/www/us/en/support/programmable/support-resources/support-centers/nios-ii-support.html

@@ -1,0 +1,672 @@
+
+
+
+html:not([data-theme]),
+html[data-color-mode="dark"][data-theme~="dark:original"],
+html[data-color-mode="light"][data-theme~="light:original"] {
+    --confluence-color-scheme-topBarColor: #ffffff;
+    --confluence-color-scheme-breadcrumbsTextColor: #292929;
+    --confluence-color-scheme-headingTextColor: #172B4D;
+    --confluence-color-scheme-linkColor: #3b73af;
+    --confluence-color-scheme-borderColor: #11131c;
+    --confluence-color-scheme-searchFieldBackgroundColor: rgba(9, 30, 66, 0.48);
+    --confluence-color-scheme-searchFieldTextColor: #DEEBFF;
+    --confluence-color-scheme-topBarMenuItemTextColor: #172B4D;
+    --confluence-color-scheme-menuSelectedBackgroundColor: #3b73af;
+    --confluence-color-scheme-topBarMenuSelectedBackgroundColor: #25346e;
+    --confluence-color-scheme-topBarMenuSelectedTextColor: #DEEBFF;
+    --confluence-color-scheme-menuItemTextColor: #172B4D;
+    --confluence-color-scheme-menuItemSelectedBackgroundColor: #ebecf0;
+    --confluence-color-scheme-menuItemSelectedTextColor: #172B4D;
+    --confluence-color-scheme-headerButtonTextColor: #ffffff;
+    --confluence-color-scheme-headerButtonBaseBackgroundColor: #30448e;
+}
+
+html[data-color-mode="light"][data-theme~="light:light"],
+html[data-color-mode="dark"][data-theme~="dark:light"] {
+            --confluence-color-scheme-topBarColor: #ffffff;
+                --confluence-color-scheme-breadcrumbsTextColor: #292929;
+                    --confluence-color-scheme-linkColor: #3b73af;
+                --confluence-color-scheme-borderColor: #11131c;
+                            --confluence-color-scheme-menuSelectedBackgroundColor: #3b73af;
+                --confluence-color-scheme-topBarMenuSelectedBackgroundColor: #25346e;
+                        --confluence-color-scheme-menuItemSelectedBackgroundColor: #ebecf0;
+                        --confluence-color-scheme-headerButtonBaseBackgroundColor: #30448e;
+    }
+
+
+h1, h2, h3, h4,
+.wiki-content h1,
+.wiki-content h2,
+.wiki-content h3,
+.wiki-content h4,
+.pagetitle,
+.steptitle,
+.substeptitle,
+.formtitle,
+table.confluenceTable td.confluenceTd.highlight,
+table.confluenceTable td.confluenceTd.highlight > p,
+table.confluenceTable th.confluenceTh,
+table.confluenceTable th.confluenceTh > p,
+.wiki-content .tablesorter-header-inner,
+table.admin th,
+.form-element-large,
+.form-element-small,
+#toolbar #format-dropdown .format-h1 a,
+#toolbar #format-dropdown .format-h2 a,
+#toolbar #format-dropdown .format-h3 a,
+#toolbar #format-dropdown .format-h4 a {
+    color: var(--confluence-color-scheme-headingTextColor, var(--ds-text));
+}
+
+h5, h6,
+.wiki-content h5,
+.wiki-content h6,
+#toolbar #format-dropdown .format-h5 a,
+#toolbar #format-dropdown .format-h6 a {
+    color: var(--ds-text, #5E6C84);
+}
+
+#format-dropdown .mce_formatPreview.mce_blockquote a {
+    border-left-color: var(--confluence-color-scheme-borderColor, var(--ds-border));
+}
+
+.wiki-content h1,
+.wiki-content h2 {
+ 	border-bottom-color: var(--confluence-color-scheme-borderColor, var(--ds-border));
+}
+
+.wiki-content-preview {
+    border-left-color: var(--confluence-color-scheme-borderColor, var(--ds-border));
+    border-right-color: var(--confluence-color-scheme-borderColor, var(--ds-border));
+}
+
+.pageSectionHeader {
+    border-bottom-color: var(--ds-surface, #DFE1E6);
+}
+
+.panel {
+    border-color: var(--confluence-color-scheme-borderColor, var(--ds-border));
+}
+
+.panelHeader,
+.menuheading,
+.pageheader,
+.sectionbottom {
+    border-bottom-color: var(--confluence-color-scheme-borderColor, var(--ds-border));
+}
+
+.topRow {
+    border-top-color: var(--confluence-color-scheme-borderColor, var(--ds-border));
+}
+
+.tabletitle, .pageSectionHeader {
+	border-bottom-color: var(--confluence-color-scheme-borderColor, var(--ds-border));
+}
+
+blockquote {
+    border-left-color: var(--confluence-color-scheme-borderColor, var(--ds-border));
+}
+
+a,
+a:visited,
+a:focus,
+a:hover,
+a:active,
+a.blogHeading {
+    color: var(--confluence-color-scheme-linkColor, var(--ds-link));
+}
+
+.acs-side-bar-space-info a,
+.acs-side-bar .tip a,
+.ia-secondary-container a {
+    color: var(--confluence-color-scheme-linkColor, var(--ds-link));
+}
+
+.aui-nav-vertical li a:link,
+.aui-nav-vertical li a:focus,
+.aui-nav-vertical li a:visited,
+.aui-nav-vertical li a:active {
+    color: var(--confluence-color-scheme-linkColor, var(--ds-link));
+}
+
+.wiki-content a,
+.wiki-content a:link,
+.wiki-content a:visited,
+.wiki-content a:focus,
+.wiki-content a:hover,
+.wiki-content a:active {
+    color: var(--confluence-color-scheme-linkColor, var(--ds-link));
+}
+
+.ia-secondary-content .acs-tree-item .navigation-pseudo-link {
+    color: var(--confluence-color-scheme-linkColor, var(--ds-link));
+}
+
+a.visitable:visited {
+    color: var(--confluence-color-scheme-visitedLinkColor, var(--ds-link-visited));
+}
+
+.createlink,
+a.createlink,
+a.createlink:link,
+a.createlink:visited,
+a.createlink:active,
+a.createlink:hover {
+    text-decoration: underline;
+    color: #6D1806;
+}
+
+.unresolved,
+a.unresolved,
+a.unresolved:link,
+a.unresolved:visited,
+a.unresolved:active,
+a.unresolved:hover {
+    text-decoration: underline;
+    color: #828282;
+}
+
+.not-permitted,
+a.not-permitted,
+a.not-permitted:link,
+a.not-permitted:visited,
+a.not-permitted:hover,
+a.not-permitted:active {
+    color: var(--ds-text-danger, #cc0000);
+}
+
+.grey,
+a.grey,
+a.grey:link,
+a.grey:visited,
+a.grey:hover,
+a.grey:active {
+    color: #666;
+}
+
+#tinymce.wiki-content a,
+#tinymce.wiki-content a:link,
+#tinymce.wiki-content a:visited,
+#tinymce.wiki-content a:focus,
+#tinymce.wiki-content a:hover,
+#tinymce.wiki-content a:active {
+	color: var(--confluence-color-scheme-linkColor, var(--ds-link)) !important;
+}
+
+#tinymce.wiki-content>p {
+    word-wrap: break-word;
+}
+
+#tinymce.wiki-content a.createlink {
+    color: #6D1806  !important; }
+
+#tinymce.wiki-content a.unresolved {
+    color: #828282 !important; }
+
+#tinymce.wiki-content a.not-permitted {
+    color: var(--ds-text-danger, #cc0000) !important; }
+
+h1 a:link,
+h1 a:visited,
+h1 a:focus,
+h1 a:hover,
+h1 a:active {
+    color: var(--confluence-color-scheme-linkColor, var(--ds-link));
+    border-bottom-color: var(--confluence-color-scheme-headingTextColor, var(--ds-text));
+}
+
+.spacenametitle-printable,
+.spacenametitle-printable a,
+.spacenametitle-printable a:visited {
+    color: var(--ds-text-subtlest, #999999);
+}
+
+.tableview th {
+    color: var(--confluence-color-scheme-headingTextColor, var(--ds-text));
+    border-bottom-color: var(--confluence-color-scheme-borderColor, var(--ds-border));
+}
+
+.navBackgroundBox {
+    background: var(--ds-surface, #DFE1E6);
+    color: var(--ds-text-subtle, #505F79);
+}
+
+.previewBoxTop,
+.previewContent,
+.previewBoxBottom,
+.functionbox {
+    border-color: var(--confluence-color-scheme-borderColor, var(--ds-border));
+}
+
+.smalltext-blue {
+    color: var(--confluence-color-scheme-borderColor, var(--ds-border));
+}
+
+.tabnav,
+.comment .tabnav,
+ul.tabnav {
+    border-bottom-color: var(--ds-surface, #DFE1E6);
+}
+
+.tabnav .tabs a {
+    border-color: var(--ds-surface, #DFE1E6);
+    background: var(--ds-surface, #DFE1E6);
+}
+
+.tabnav .tabs a:link,
+.tabnav .tabs a:visited {
+    color: var(--ds-text-subtle, #505F79);
+}
+.tabnav .tabs a:hover {
+    color: var(--ds-text-inverse, #ffffff);
+    background: var(--ds-background-selected, #172B4D);
+    border-color: var(--ds-background-selected, #172B4D);
+}
+
+#squaretab a {
+    border-color: var(--ds-surface, #DFE1E6);
+}
+
+#squaretab a:link,
+#squaretab a:visited {
+    background-color: var(--ds-surface, #DFE1E6);
+    color: var(--ds-text-subtle, #505F79);
+}
+
+#squaretab a:hover {
+    color: var(--ds-text-inverse, #ffffff);
+    background-color: var(--ds-background-selected, #172B4D);
+    border-color: var(--ds-background-selected, #172B4D);
+}
+
+table.blogcalendar {
+    border-color: var(--confluence-color-scheme-borderColor, var(--ds-border));
+}
+
+.blogcalendar th.calendarhead,
+a.calendarhead,
+a.calendarhead:link,
+a.calendarhead:visited,
+a.calendarhead:hover {
+    background-color: var(--ds-surface, #DFE1E6);
+    color: var(--ds-text-subtle, #505F79);
+}
+
+.searchGroupHeading {
+    background-color: var(--ds-surface, #DFE1E6);
+    color: var(--ds-text-subtle, #505F79);
+}
+
+.topBar {
+    background-color: var(--confluence-color-scheme-topBarColor, var(--ds-surface));
+}
+
+.basicPanelContainer {
+    border-color: var(--ds-surface, #DFE1E6);
+}
+
+.greynavbar {
+    border-top-color: var(--ds-surface, #DFE1E6)
+}
+
+div.license-personal {
+   background-color: var(--confluence-color-scheme-topBarColor, var(--ds-surface));
+   color: var(--ds-text-subtle, #505F79);
+}
+
+div.license-personal a {
+   color: var(--ds-text-subtle, #505F79);
+}
+
+#header {
+    background-color: var(--confluence-color-scheme-topBarColor, var(--ds-surface));
+}
+
+#header a,
+#breadcrumbs {
+    color: var(--confluence-color-scheme-breadcrumbsTextColor, var(--ds-text-subtle));
+}
+
+.breadcrumbs {
+ 	border-color: var(--confluence-color-scheme-borderColor, var(--ds-border));
+}
+
+a.aui-skip-link {
+    color: var(--confluence-color-scheme-linkColor, var(--ds-link)) !important;
+}
+
+a.aui-skip-link:active, a.aui-skip-link:focus {
+    z-index: 100 !important;
+}
+
+.tab-navigation .tab a {
+    background-color: var(--ds-surface, #DFE1E6);
+    border: 1px solid var(--ds-surface, #DFE1E6);
+    color: var(--ds-text-subtle, #505F79);
+}
+.tab-navigation .tab a:hover {
+    color: var(--ds-text-inverse, #ffffff);
+    background-color: var(--ds-background-selected, #172B4D);
+    border-bottom-color: var(--ds-background-selected, #172B4D);
+}
+
+.tabletitle, .heading-text-color {
+    color: var(--confluence-color-scheme-headingTextColor, var(--ds-text));
+}
+
+ol.autocompleter li.focused {
+	background: var(--confluence-color-scheme-menuSelectedBackgroundColor, var(--ds-background-neutral-hovered));
+	color: var(--confluence-color-scheme-menuItemSelectedTextColor, var(--ds-text));
+}
+
+
+.diff-navigation a.version-navigation {
+    background-color: #ddd;
+}
+
+.diff-navigation a.version-navigation:hover {
+    background-color: #bbb;
+}
+
+.diff-navigation a.version-navigation.all:hover {
+    background-color: transparent;
+}
+
+
+.tasklist .task.complete .signoff { color: var(--ds-text-success, #008004); }
+.tasklist .task.incomplete .signoff { color: var(--ds-text-danger, #cc0000); }
+
+
+
+#move-page-dialog .ui-tree li a.highlighted {
+    background-color: var(--ds-surface, #DFE1E6);
+    color: var(--ds-text-subtle, #505F79);
+}
+
+
+
+a:not(.aui-button,.aui-dialog2-header-close) {
+    color: var(--confluence-color-scheme-linkColor, var(--ds-link));
+}
+
+.aui-dropdown2 a:not(.aui-button,.aui-dialog2-header-close) {
+    color: initial;
+}
+
+.aui-toolbar .aui-buttons .toolbar-item-link:hover button.toolbar-trigger,
+.aui-toolbar .aui-buttons .toolbar-item-link button.toolbar-trigger,
+.aui-navgroup-horizontal .aui-nav > li a,
+.aui-dialog .dialog-page-menu li.page-menu-item button.item-button,
+body.spaces .aui-tabs > .tabs-menu .menu-item a,
+body.spaces .aui-tabs > .tabs-menu .menu-item a:link,
+body.spaces .aui-tabs > .tabs-menu .menu-item a:visited {
+    color: var(--confluence-color-scheme-linkColor, var(--ds-link));
+}
+
+.aui-nav-vertical li.active a,
+.aui-nav-vertical li.active a:hover {
+    color: var(--confluence-color-scheme-menuItemSelectedTextColor, var(--ds-text));
+    background-color: var(--confluence-color-scheme-menuItemSelectedBackgroundColor, var(--ds-background-neutral-hovered));
+}
+
+#com-atlassian-confluence .aui-dd-parent .aui-dropdown .dropdown-item a,
+.aui-dropdown2 .aui-dropdown2-section li a {
+    color: var(--confluence-color-scheme-menuItemTextColor, var(--ds-text));
+}
+
+.aui-dialog .dialog-button-panel a.button-panel-link {
+    color: var(--confluence-color-scheme-linkColor, var(--ds-link));
+}
+
+.aui-button.aui-button-link {
+    color: var(--confluence-color-scheme-linkColor, var(--ds-link));
+}
+
+.aui-dropdown2-in-header.aui-style-default a,
+.aui-dropdown2-in-header.aui-style-default a:visited,
+.aui-dropdown2-in-header.aui-style-default a:link,
+.aui-dropdown2-in-header.aui-style-default:hover a,
+.aui-dropdown2-in-header.aui-style-default:hover a:visited,
+.aui-dropdown2-in-header.aui-style-default:hover a:link{
+    color: var(--confluence-color-scheme-topBarMenuItemTextColor, var(--ds-text));
+}
+
+.aui-dropdown2.aui-style-default:hover .aui-dropdown2-checkbox,
+.aui-dropdown2.aui-style-default:hover .aui-dropdown2-radio,
+.aui-dropdown2.aui-style-default:hover a {
+    color: var(--confluence-color-scheme-menuItemTextColor, var(--ds-text));
+}
+
+.aui-dropdown2.aui-style-default:hover a:not(.aui-dropdown2-disabled):focus,
+.aui-dropdown2.aui-style-default:hover a:not(.aui-dropdown2-disabled):hover,
+.aui-dropdown2.aui-style-default:hover a.active:not(.aui-dropdown2-disabled),
+.aui-dropdown2.aui-style-default:hover .aui-dropdown2-radio:not(.aui-dropdown2-disabled):hover {
+    color: var(--confluence-color-scheme-menuItemSelectedTextColor, var(--ds-text));
+    background-color: var(--confluence-color-scheme-menuItemSelectedBackgroundColor, var(--ds-background-neutral-hovered));
+}
+
+#com-atlassian-confluence .aui-dd-parent a.perms-dropdown-trigger:hover,
+#com-atlassian-confluence .aui-dd-parent a.perms-dropdown-trigger:focus,
+#com-atlassian-confluence .aui-dd-parent .aui-dropdown .dropdown-item.active a,
+.ajs-menu-bar .ajs-menu-item li.active a,
+.aui-dd-parent .aui-dropdown li.active,
+.ajs-menu-bar .ajs-menu-item.opened .ajs-drop-down li.active a,
+.ajs-content-hover .popup-follow a:hover {
+    color: var(--confluence-color-scheme-menuItemSelectedTextColor, var(--ds-text));
+    background-color: var(--confluence-color-scheme-menuItemSelectedBackgroundColor, var(--ds-background-neutral-hovered));
+}
+
+.ajs-menu-bar .ajs-menu-item.opened a.trigger {
+    background-color: var(--confluence-color-scheme-menuSelectedBackgroundColor, var(--ds-background-neutral-hovered));
+}
+
+/*************** NEW HEADER COLORS ***************/
+#header .aui-header {
+    background-color: var(--confluence-color-scheme-topBarColor, var(--ds-surface));
+    color: var(--confluence-color-scheme-breadcrumbsTextColor, var(--ds-text-subtle));
+}
+
+.aui-header .aui-dropdown2-trigger:hover,
+.aui-header .aui-dropdown2-trigger.active,
+#header .aui-header .aui-nav-link.active,
+#header .aui-header .aui-nav-imagelink.active,
+#header .aui-header .aui-nav-imagelink:focus,
+#header .aui-header .aui-nav-imagelink:hover,
+#header .aui-header a:focus,
+#header .aui-header a:hover,
+#header .aui-header a:active {
+    background-color: var(--confluence-color-scheme-topBarMenuSelectedBackgroundColor, var(--ds-background-input));
+    border-color: var(--confluence-color-scheme-topBarMenuSelectedBackgroundColor, var(--ds-background-input));
+    color: var(--confluence-color-scheme-topBarMenuSelectedTextColor, var(--ds-text-subtle));
+}
+
+.aui-header .aui-dropdown2-trigger.active::after,
+.aui-header .aui-dropdown2-trigger:hover::after {
+    border-top-color: var(--confluence-color-scheme-topBarMenuSelectedTextColor, var(--ds-text-subtle));
+}
+
+.aui-header .aui-dropdown2-trigger::after {
+    border-top-color: var(--confluence-color-scheme-breadcrumbsTextColor, var(--ds-text-subtle));
+}
+
+.aui-header .aui-dropdown2-trigger,
+#header .aui-header .aui-nav-link ,
+#header .aui-header .aui-nav-imagelink,
+#header .aui-header a {
+    color: var(--confluence-color-scheme-breadcrumbsTextColor, var(--ds-text-subtle));
+}
+
+#header .aui-header .aui-dropdown2 {
+    border-color: var(--confluence-color-scheme-topBarColor, var(--ds-surface));
+}
+#header .aui-header .aui-dropdown2 li.separator {
+    border-top-color: var(--confluence-color-scheme-topBarColor, var(--ds-surface));
+}
+
+#header .aui-header .aui-dd-parent .aui-dropdown a:focus,
+#header .aui-header .aui-dd-parent .aui-dropdown a:hover,
+#header .aui-header .aui-dd-parent .aui-dropdown a:active,
+#header .aui-header .aui-dd-parent .aui-dropdown li.active a {
+    color: var(--confluence-color-scheme-menuItemSelectedTextColor, var(--ds-text));
+    background-color: var(--confluence-color-scheme-menuItemSelectedBackgroundColor, var(--ds-background-neutral-hovered));
+}
+
+#header .aui-header li.aui-nav a.aui-nav-link a{
+    color: var(--confluence-color-scheme-topBarMenuItemTextColor, var(--ds-text));
+}
+
+#app-switcher.aui-dropdown2.aui-style-default .active,
+.aui-dropdown2-trigger.app-switcher-trigger:hover,
+.aui-dropdown2.aui-style-default .active {
+    background-color: var(--confluence-color-scheme-menuItemSelectedBackgroundColor, var(--ds-background-neutral-hovered));
+    color: var(--confluence-color-scheme-menuItemSelectedTextColor, var(--ds-text));
+}
+
+#header .aui-header .aui-nav .aui-button-primary {
+    background-color: var(--confluence-color-scheme-headerButtonBaseBackgroundColor, var(--ds-background-brand-bold));
+    color: var(--confluence-color-scheme-headerButtonTextColor, var(--ds-text-inverse));
+}
+
+#header .aui-header .aui-nav .aui-button-primary:hover,
+#header .aui-header .aui-nav .aui-button-primary:focus {
+    filter: brightness(1.2);
+    color: var(--confluence-color-scheme-headerButtonTextColor, var(--ds-text-inverse));
+}
+
+.aui-header .aui-quicksearch input[type='text'],
+.aui-header .aui-quicksearch input[type='text'][type='text']:focus {
+    background: var(--confluence-color-scheme-searchFieldBackgroundColor, var(--ds-background-input))
+}
+
+.aui-header .aui-quicksearch:after,
+.aui-header .aui-quicksearch input[type='text'],
+.aui-header .aui-quicksearch input[type='text'][type='text']:focus {
+    color: var(--confluence-color-scheme-searchFieldTextColor, var(--ds-text-subtlest));
+}
+
+#header .aui-header .aui-nav .aui-button-primary:active {
+    background-color: var(--confluence-color-scheme-headerButtonBaseBackgroundColor, var(--ds-background-brand-bold));
+    color: var(--confluence-color-scheme-headerButtonTextColor, var(--ds-text-inverse));
+}
+
+/* @group labels */
+
+.aui-label {
+    background-color: var(--ds-background-accent-gray-subtler, #F2F2F2);
+}
+
+.tag-cloud .aui-label a:link,
+.tag-cloud .aui-label a:visited {
+    color: var(--confluence-color-scheme-linkColor, var(--ds-link));
+}
+
+/* @end */
+
+
+
+/* @group Diff colours */
+
+.diff-tag-added {
+    background-color: var(--ds-background-accent-green-subtle, #93c49f);
+}
+
+.diff-tag-removed {
+    background-color: var(--ds-background-accent-red-subtle, #df9898);
+}
+
+.diff-html-added {
+    background-color: var(--ds-background-accent-green-subtlest, #ddfade);
+    border-color: var(--ds-background-accent-green-subtle, #93c49f);
+}
+
+.diff-html-removed {
+    background-color: var(--ds-background-accent-red-subtlest, #ffe7e7);
+    border-color: var(--ds-background-accent-red-subtle, #df9898);
+}
+
+.diff-html-changed {
+    background-color: var(--ds-background-accent-blue-subtler, #d6f0ff);
+    border-color: var(--ds-background-accent-blue-subtle, #9eb6d4);
+}
+
+.diff-html-added img {
+    border-color: var(--ds-background-accent-green-subtle, #93c49f);
+}
+
+.diff-html-removed img {
+    border-color: var(--ds-background-accent-red-subtle, #df9898);
+}
+
+.diff-html-changed img {
+    border-color: var(--ds-background-accent-blue-subtle, #9eb6d4);
+}
+
+.diff-image-overlay,
+.wiki-content .diff-image-overlay {
+    color: var(--ds-background-accent-gray-bolder, #535353);
+}
+
+.diff-image-overlay.diff-removed-image {
+    background-color: var(--ds-background-accent-red-subtlest, #ffe7e7);
+}
+
+.diff-image-overlay.diff-added-image {
+    background-color: var(--ds-background-accent-green-subtlest, #ddfade);
+}
+
+.diff-image-overlay.diff-changed-image {
+    background-color: var(--ds-background-accent-blue-subtler, #d6f0ff);
+}
+
+.diff-macro {
+    border-color: var(--ds-background-accent-gray-subtle, #ddd);
+    background-color: var(--ds-background-accent-gray-subtlest, #f0f0f0);
+}
+
+.diff-macro .diff-macro-title {
+    background-color: transparent;
+}
+
+.diff-macro .diff-macro-properties {
+    border-color: var(--ds-background-accent-gray-subtle, #ddd);
+}
+
+.diff-macro .diff-macro-properties,
+.diff-macro .diff-macro-properties th,
+.diff-macro .diff-macro-properties td {
+    background-color: var(--ds-background-input, #fafafa);
+    background: rgba(255,255,255,0.5);
+}
+
+.diff-macro .diff-macro-body {
+    background-color: #fff;
+    border: 1px solid var(--ds-background-accent-gray-subtle, #ddd);
+}
+
+.diff-macro.diff-html-added,
+.diff-macro.diff-html-added .diff-macro-body {
+    background-color: var(--ds-background-accent-green-subtlest, #ddfade);
+    border-color: var(--ds-background-accent-green-subtle, #93c49f);
+}
+
+.diff-macro.diff-html-removed,
+.diff-macro.diff-html-removed .diff-macro-body {
+    background-color: var(--ds-background-accent-red-subtlest, #ffe7e7);
+    border-color: var(--ds-background-accent-red-subtle, #df9898);
+}
+
+.diff-macro.diff-html-changed,
+.diff-macro.diff-html-changed .diff-macro-body {
+    background-color: var(--ds-background-accent-blue-subtler, #d6f0ff);
+    border-color: var(--ds-background-accent-blue-subtle, #9eb6d4);
+}
+
+.diff-macro.diff-html-added .diff-macro-body,
+.diff-macro.diff-html-removed .diff-macro-body,
+.diff-macro.diff-html-changed .diff-macro-body {
+    background-color: #fff;
+}
+
+/* @end Diff colours */
+
